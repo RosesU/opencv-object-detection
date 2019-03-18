@@ -12,8 +12,9 @@ public class Application {
 
     public static void main(String[] args)
     {
-        DeepNeuralNetworkProcessor processor = new DeepNeuralNetworkProcessor();
         System.loadLibrary("opencv_java340");
+        DeepNeuralNetworkProcessor processor = new DeepNeuralNetworkProcessor();
+        //System.loadLibrary("opencv_java340");
         List<DnnObject> detectObject = new ArrayList<>();
         VideoCapture capturre = new VideoCapture(0);
         while (true)
